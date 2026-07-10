@@ -83,7 +83,7 @@ class Menu:
     
     def draw_instructions(self, screen):
         """Dibuja la pantalla de instrucciones"""
-        screen.fill(self.background_color)
+        screen.blit(self.background_image, (0, 0))
         
         title = self.font_title.render("INSTRUCCIONES", True, self.selected_color)
         title_rect = title.get_rect(center=(self.screen_width // 2, 30))

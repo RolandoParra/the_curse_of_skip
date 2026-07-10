@@ -38,5 +38,5 @@ Aquí abajo puedes ver una foto del autor (100% real, no fake, un link megauploa
 <p align="center">¡Buena suerte... la vas a necesitar! 💀</p>
 
 
-# ==========
+# ==============================
 ![poster](assets/poster.png)

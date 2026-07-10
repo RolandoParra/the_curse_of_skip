@@ -1,16 +1,27 @@
 import pygame
 import random
 import sys
-from assets.src.classes import Controller
+from assets.src.classes import Controller, Menu
 import time
 
 
-actual_room = 1
 pygame.init()
 clock = pygame.time.Clock()
 screen = pygame.display.set_mode((800, 600))
-pygame.display.set_caption("Juan, trae pan")
+pygame.display.set_caption("The Curse of Skip")
 
+# Mostrar menú principal
+menu = Menu(800, 600)
+while True:
+    action = menu.handle_events()
+    menu.draw_menu(screen)
+    pygame.display.flip()
+    clock.tick(60)
+    if action == "PLAY":
+        break
+
+# Inicializar juego
+actual_room = 1
 game_controller = Controller()
 
 def random_move_delay() -> int:
